@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Priyal-Patel0810/Priyal-Patel0810-CBD-3344-In-class-activity-2.git
-    path: nginx
+    path: nginx-proxy
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
