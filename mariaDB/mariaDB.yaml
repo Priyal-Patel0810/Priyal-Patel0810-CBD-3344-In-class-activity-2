@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mariaDB
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: mariaDB
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: mariaDB
+    repoURL: >-
+      https://github.com/Priyal-Patel0810/Priyal-Patel0810-CBD-3344-In-class-activity-2.git
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
